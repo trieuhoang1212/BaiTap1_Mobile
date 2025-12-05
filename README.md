@@ -1,13 +1,7 @@
-# Bài Tập 1 - Lập Trình Mobile
+# Bài Tập Môn Lập Trình Mobile (▀̿Ĺ̯▀̿ ̿)
 
-Câu hỏi 1: trong file Cau1.txt
+Đây là các bài lab của môn Lập trình thiết bị di động - 7480201130693
 
-Câu hỏi 2: trong file Cau2.txt
-
-Câu 3: nằm trong đường dẫn BT_1\BaiTap1\Source Code\baitap1
-Folder lib có sourcecode của bài tập
-Folder asset có hình avt và hình ảnh sản phẩm
-
-## Kết quả
-
-![Kết quả giao diện](BaiTap1/SourceCode/baitap1/assets/images/sanpham.png)
+## Thông Tin 💻
+**Họ & Tên:** Nguyễn Hoàng Triều
+**MSSV:** 09220500523
