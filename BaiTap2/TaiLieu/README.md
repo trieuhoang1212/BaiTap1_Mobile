@@ -9,11 +9,11 @@ Bài tập số 2 này làm về giao diện nhập số nguyên dương, nhập
 **_NumberListState.build():** TextField để nhập số, nút "Tạo" để tạo createList().
 
 # **Kết Quả**
-Giao diện:
-![NhapDung](../SourceCode/assets/images/giao_dien_chinh.png)
+**Giao diện:**
+    ![NhapDung](../SourceCode/assets/images/giao_dien_chinh.png)
 
-Nhập đúng cứu pháp:
-![NhapDung](../SourceCode/assets/images/nhap_dung_cuu_phap.png)
+**Nhập đúng cứu pháp:**
+    ![NhapDung](../SourceCode/assets/images/nhap_dung_cuu_phap.png)
 
-Nhập sai cứu pháp:
-![NhapDung](../SourceCode/assets/images/nhap_sai_cuu_phap.png)
+**Nhập sai cứu pháp:**
+    ![NhapDung](../SourceCode/assets/images/nhap_sai_cuu_phap.png)
