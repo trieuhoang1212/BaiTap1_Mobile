@@ -92,7 +92,7 @@ Ví dụ:
 ```Kotlin
 val ten: String? = null
 
-<!-- đây là cách nhận biết truyền thống -->
+// đây là cách nhận biết truyền thống
 val do_dai: Int
 if (ten != null) {
     do_dai = name.length
@@ -103,10 +103,42 @@ if (ten != null) {
 Còn đây là khi sử dụng **?:**
 ```Kotlin
 val do_dai = name?.length ?: 0 
-<!-- đơn giản và dễ thực hiện -->
+// đơn giản và dễ thực hiện 
 println(do_dai) 
 ```
 Dòng **"val do_dai = name?.length ?: 0"** bạn nghĩ đơn giản là nếu name trả về độ dài có giá trị là null thì giá trị sẽ trả về giá trị là 0.
 
-### **d. hàm let (kết hợp với ?.)**
+### **d. Hàm Let (sử dụng chung với ?.)**
+Let khi mình tìm hiểu thì nó như thay thế cho điều kiện if vậy thì nó sẽ đi kèm với `?.` để có thể check null 
+_ví dụ:_
+```Kotlin
+// Cách tiếp cận thông thường 
+if (variable != null) { /*Do something*/ }
+
+
+// Cách tiếp cận của Kotlin
+variable?.let { /*Do something*/ }
+```
+Như vậy thì mình sẽ thấy rằng check null bây giờ sẽ rất đơn giản. Nhưng khi mình coi một bài viết:
+[Kotlin: Không nên lạm dụng LET cho việc check null](https://viblo.asia/p/kotlin-khong-nen-lam-dung-let-cho-viec-check-null-YWOZrBVYZQ0)
+thì bạn có thể tìm hiểu thêm về trường hợp nào nên hay không nên dùng `let` <3.
+
+### **e. Toán tử !!:**
+Toán tử này sẽ giúp cho ép đoạn code của bạn biên dịch là không phải là `null`
+Cách hoạt động cũng như ở các toán tử và hàm trên nhưng chức năng thì nếu biến của bạn gán thật sự là null thì sẽ gây ra tình trạng là *NullReferenceException*.
+
+```Kotlin
+val message: String? = "Hello"
+val noMessage: String? = null
+
+// 1. Dùng an toàn:
+val len = message!!.length 
+
+// 2. Dùng nguy hiểm:
+val errorLen = noMessage!!.length
+```
+
+
+
+
 
