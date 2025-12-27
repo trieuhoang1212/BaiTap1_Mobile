@@ -166,7 +166,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
       decoration: BoxDecoration(
-        color: const Color.fromARGB(255, 0, 58, 106),
+        color: const Color.fromARGB(255, 20, 89, 146),
         borderRadius: BorderRadius.circular(10),
       ),
       child: Text(
@@ -188,14 +188,21 @@ class _MyHomePageState extends State<MyHomePage> {
     return Center(
       child: Column(
         children: [
-          Text(
-            title,
-            style: GoogleFonts.mavenPro(
-              fontSize: 24,
-              fontWeight: FontWeight.w700,
-              color: Colors.black,
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+            decoration: BoxDecoration(
+              color: const Color.fromARGB(225, 32, 105, 165),
+              borderRadius: BorderRadius.circular(10),
             ),
-            textAlign: TextAlign.left,
+            child: Text(
+              title,
+              style: GoogleFonts.mavenPro(
+                fontSize: 24,
+                fontWeight: FontWeight.w700,
+                color: Colors.white,
+              ),
+              textAlign: TextAlign.left,
+            ),
           ),
           const SizedBox(height: 10),
           ...items.map(
@@ -226,7 +233,7 @@ class _MyHomePageState extends State<MyHomePage> {
           alignment: Alignment.centerLeft,
           padding: const EdgeInsets.all(10),
           side: const BorderSide(
-            color: Color.fromARGB(255, 203, 203, 203),
+            color: Color.fromARGB(99, 25, 64, 109),
             width: 2,
           ),
           overlayColor: Colors.blue.shade100,
