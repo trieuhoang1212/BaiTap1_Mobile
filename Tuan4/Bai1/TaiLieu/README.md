@@ -13,18 +13,18 @@ file chính nằm ở class `_MyHomePageState`, mình đã sử dụng widget `S
 # **Kết Quả**
 
 **Giao diện chính**
-    ![GiaoDienChinh](../sourcecode/assets/images/giao_dien_chinh.png)
+    ![GiaoDienChinh](../sourcecode_bai1/assets/images/giao_dien_chinh.png)
 
 **Một số page mẫu**
 
  _TextPage_
-    ![TextPage](../sourcecode/assets/images/page_mau.png)
+    ![TextPage](../sourcecode_bai1/assets/images/page_mau.png)
 
  _StaffAreaPage_
-    ![StaffAreaPage](../sourcecode/assets/images/page_mau1.png)
+    ![StaffAreaPage](../sourcecode_bai1/assets/images/page_mau1.png)
 
  _CheckBoxPage_
-    ![CheckBoxPage](../sourcecode/assets/images/page_mau2.png)
+    ![CheckBoxPage](../sourcecode_bai1/assets/images/page_mau2.png)
 
 _AnimatedListPage_
-    ![AnimatedListPage](../sourcecode/assets/images/page_mau3.png)
+    ![AnimatedListPage](../sourcecode_bai1/assets/images/page_mau3.png)

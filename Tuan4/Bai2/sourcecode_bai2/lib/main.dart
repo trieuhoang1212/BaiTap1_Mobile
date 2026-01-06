@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
-// 2. DATA SOURCE (có thể tách ra file riêng)
+// 2. DATA SOURCE
 class OnboardingData {
   static const List<OnboardingModel> contents = [
     OnboardingModel(
@@ -63,7 +63,7 @@ class OnboardingData {
   ];
 }
 
-// 3. SCREEN (Controller + View)
+// 3. SCREEN 
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({super.key});
 
@@ -175,7 +175,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   }
 }
 
-// 4. NAVIGATION BAR WIDGET (Tách logic nút ra)
+// 4. NAVIGATION BAR WIDGET 
 class OnboardingNavigationBar extends StatelessWidget {
   final int currentIndex;
   final int totalPages;
@@ -232,7 +232,7 @@ class OnboardingNavigationBar extends StatelessWidget {
   }
 }
 
-// 5. CONTENT WIDGET (Reusable Component)
+// 5. CONTENT WIDGET
 class OnboardingContentWidget extends StatelessWidget {
   final OnboardingModel model;
 
