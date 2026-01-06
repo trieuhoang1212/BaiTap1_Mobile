@@ -33,8 +33,25 @@
 
 [**Bài tập tuần 4**](Tuan4)
 
-- Tạo UI giống mẫu. Tạo ra một giao diện cơ bản hiển thị một số **Component Basic** của **Flutter** ở và ấn vào các page thì sẽ hiển thị ra gợi ý các sử dụng `Class` ấy.
-        - [main.dart](Tuan4/sourcecode_tuan1/lib/main.dart)
-        - [Components](Tuan4/sourcecode_tuan1/lib/Components)
-        - [Source Code](Tuan4/sourcecode_tuan1) 
-        - [Mẫu & Sản phẩm](Tuan4/sourcecode_tuan1/assets/images)
+**BÀI 1**
+ - Tạo UI giống mẫu. Tạo ra một giao diện cơ bản hiển thị một số **Component Basic** của **Flutter** ở và ấn vào các page thì sẽ hiển thị ra gợi ý các sử dụng `Class` ấy.
+        - [main.dart](Tuan4/Bai1/sourcecode_bai1/lib/main.dart)
+        - [Components](Tuan4/Bai1/sourcecode_bai1/lib/Components)
+        - [Source Code](Tuan4/Bai1/sourcecode_bai1) 
+        - [Mẫu & Sản phẩm](Tuan4/Bai1/sourcecode_bai1/assets/images)
+
+**BÀI 2**
+ - Tạo UI giống mẫu. Tạo ra một giao diện cơ bản hiển thị một số **Component Basic** của **Flutter** ở và ấn vào các page thì sẽ hiển thị ra gợi ý các sử dụng `Class` ấy.
+        - [main.dart](Tuan4/Bai2/sourcecode_bai2/lib/main.dart)
+        - [Page_indicator.dart](Tuan4/Bai2/sourcecode_bai2/lib/page_indicator.dart)
+        - [Source Code](Tuan4/Bai2/sourcecode_bai2) 
+        - [Mẫu & Sản phẩm](Tuan4/Bai2/sourcecode_bai2/assets/images)
+
+**BÀI 3**
+ - Tạo UI giống mẫu. Tạo ra một giao diện cơ bản hiển thị một số **Component Basic** của **Flutter** ở và ấn vào các page thì sẽ hiển thị ra gợi ý các sử dụng `Class` ấy.
+        - [main.dart](Tuan4/Bai3/sourcecode_bai3/lib/main.dart)
+        - [new_password_page.dart](Tuan4/Bai3/sourcecode_bai3/lib/new_password_page.dart)
+        - [code_email_page.dart](Tuan4/Bai3/sourcecode_bai3/lib/code_email_page.dart)
+        - [confirm_page.dart](Tuan4/Bai3/sourcecode_bai3/lib/confirm_page.dart)
+        - [Source Code](Tuan4/Bai3/sourcecode_bai3) 
+        - [Mẫu & Sản phẩm](Tuan4/Bai3/sourcecode_bai3/assets/images)
