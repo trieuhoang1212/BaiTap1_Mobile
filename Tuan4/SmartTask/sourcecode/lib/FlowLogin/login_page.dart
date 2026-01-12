@@ -4,6 +4,8 @@ import 'package:sourcecode_bai3/firebase_options.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:firebase_app_check/firebase_app_check.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:sourcecode_bai3/ForgetPassword/email_connect_page.dart';
+import 'package:sourcecode_bai3/FlowLogin/login_email_auth_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -83,6 +85,11 @@ class _LoginStateState extends State<LoginState> {
   static const Color _primaryTextColor = Color.fromARGB(255, 113, 113, 113);
   static const Color _facebookBlue = Color.fromARGB(255, 59, 89, 152);
 
+  @override
+  void initState() {
+    super.initState();
+  }
+
   Future<void> _handleGoogleSignIn() async {
     try {
       final GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();
@@ -122,15 +129,6 @@ class _LoginStateState extends State<LoginState> {
         content: Text('Tính năng đăng nhập Facebook chưa được triển khai.'),
       ),
     );
-  }
-
-  Future<void> _handleEmailSignIn() async {
-    try {
-      await FirebaseAuth.instance.signInAnonymously();
-      ("Đăng nhập ẩn danh thành công");
-    } catch (e) {
-      ("Lỗi: $e");
-    }
   }
 
   @override
@@ -222,9 +220,35 @@ class _LoginStateState extends State<LoginState> {
         ),
         const SizedBox(height: _spacing),
         SocialLoginButton(
-          icon: const Icon(Icons.email, color: _facebookBlue, size: 20),
+          icon: const Icon(Icons.email, color: Colors.blue, size: 20),
           text: 'Sign in with Email',
-          onPressed: _handleEmailSignIn,
+          // Sử dụng màu từ Remote Config để đồng bộ
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) =>
+                    const EmailAuthPage(), // Chuyển đến trang Auth mới
+              ),
+            );
+          },
+        ),
+
+        const SizedBox(height: 10),
+        GestureDetector(
+          child: const Text(
+            'Quên mật khẩu?',
+            style: TextStyle(
+              color: Color.fromARGB(255, 214, 214, 214),
+              decoration: TextDecoration.none,
+            ),
+          ),
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => EmailConnectPage()),
+            );
+          },
         ),
       ],
     );
